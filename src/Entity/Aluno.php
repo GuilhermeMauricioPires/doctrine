@@ -32,6 +32,14 @@ class Aluno
      */
     public function __construct(string $nome)
     {
+        $this->definirNomeAluno($nome);
+    }
+
+    /**
+     * @param string $nome
+     */
+    public function definirNomeAluno(string $nome)
+    {
         $this->nome = $nome;
     }
 
